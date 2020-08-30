@@ -1,0 +1,9 @@
+{
+  "javascript.suggest.autoImports": true,
+  "editor.formatOnPaste": true,
+  "editor.autoIndent": "advanced",
+    "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
+  }
+}
