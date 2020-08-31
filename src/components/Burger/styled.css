@@ -46,10 +46,11 @@ input:checked ~ label .hamburguer {
 
 input:checked ~ label .hamburguer:before {
   transform: rotate(90deg);
+  transition: all .5 ease-in-out;
   top: 0;
 }
 
-input:checked ~ label .hamburguer:after {
+input:checked ~ label  .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
 }
