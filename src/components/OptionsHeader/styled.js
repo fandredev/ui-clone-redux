@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-
 export const Nav = styled.nav`
-flex: 1;
+  flex: 1;
   > ol {
     display: flex;
     justify-content: space-evenly;

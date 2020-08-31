@@ -1,8 +1,7 @@
-import {createGlobalStyle, css} from 'styled-components'
-
+import { createGlobalStyle, css } from 'styled-components'
 
 export default createGlobalStyle`
-  *{
+  *, *:before, *:after{
     margin: 0;
     padding: 0;
     outline: 0;
@@ -31,12 +30,10 @@ export default createGlobalStyle`
     --bg-input:#ebedf0;
     --hover-btn: #d4d5d8;
   }
-`;
+`
 export const fullCenter = css`
   grid-area: second;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-
+`

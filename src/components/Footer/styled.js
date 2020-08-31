@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 export const Container = styled.div`
   display: flex;
   background: var(--bg-footer);
@@ -17,16 +15,16 @@ export const Container = styled.div`
   > a img {
     width: 35%;
     opacity: 0.5;
-    @media (min-width: 550px) and (max-width: 999px){
+    @media (min-width: 550px) and (max-width: 999px) {
       width: 8%;
       max-width: 10%;
     }
-     @media (min-width: 1000px) and (max-width:1300px) {
-       width: 3%;
-     }
+    @media (min-width: 1000px) and (max-width: 1300px) {
+      width: 3%;
+    }
     &:hover {
       opacity: 1;
-      transition: opacity .15s ease-in-out;
+      transition: opacity 0.15s ease-in-out;
     }
   }
   > p {
@@ -36,4 +34,4 @@ export const Container = styled.div`
       font-size: 1.5rem;
     }
   }
-`;
+`

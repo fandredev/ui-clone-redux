@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Container, WrapperLeft, WrapperRight  } from "./styled";
+import { Container, WrapperLeft, WrapperRight } from './styled'
 import logo from '../../assets/images/redux.svg'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { useSelector, useDispatch } from 'react-redux'
@@ -9,37 +9,35 @@ import OptionsHeader from '../OptionsHeader'
 
 const Header = () => {
   const dispatch = useDispatch()
-  const viewInput = useSelector(state => state.landing.viewInput)
-  const viewTabHeader = useSelector(state => state.landing.viewTabHeader)
-  console.log(viewTabHeader, 'True ou false?')
+  const viewInput = useSelector((state) => state.landing.viewInput)
+  const viewTabHeader = useSelector((state) => state.landing.viewTabHeader)
   const handleSearch = () => {
-    dispatch(actViewInput());
+    dispatch(actViewInput())
   }
   useEffect(() => {
-    if(window.screen.width > 1000) {
+    if (window.screen.width > 1000) {
       dispatch(actViewNav())
-      return;
-    }
-    else {
+    } else {
       dispatch(actHideNav())
     }
   }, [dispatch])
   return (
     <Container>
+      {window.screen.width <= 1000 && <MenuBurger />}
       <WrapperLeft>
-        {/* <MenuBurger /> */}
         <img src={logo} alt="Logotipo do redux" />
-        {!viewInput ? (
-
-        <span>Redux</span>
-        ):<span>Redux</span>}
+        {!viewInput ? <span>Redux</span> : <span>Redux</span>}
       </WrapperLeft>
       <WrapperRight>
-        {viewTabHeader &&
-         <OptionsHeader />
-        }
+        {viewTabHeader && <OptionsHeader />}
         {viewInput && (
-          <input type="text" name="search" id="search" onChange={() => false} value={'Search'} />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            onChange={() => false}
+            value={'Search'}
+          />
         )}
         {!viewInput && (
           <i>
@@ -48,6 +46,6 @@ const Header = () => {
         )}
       </WrapperRight>
     </Container>
-  );
+  )
 }
 export default Header

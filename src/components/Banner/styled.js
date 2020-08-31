@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media (min-width: 550px) {
     display: block;
   }
-  @media (min-width: 1000px) and (max-width:1300px){
+  @media (min-width: 1000px) and (max-width: 1300px) {
     height: 45vh;
     padding: 5rem;
   }
@@ -20,14 +20,14 @@ export const Container = styled.div`
     font-size: 4rem;
     font-weight: 900;
     margin-top: 2rem;
-    @media (min-width: 1000px) and (max-width:1300px){
-      font-size:5rem;
+    @media (min-width: 1000px) and (max-width: 1300px) {
+      font-size: 5rem;
     }
   }
   > p {
     line-height: 3.6rem;
     font-size: 2rem;
-    @media (min-width: 1000px) and (max-width:1300px){
+    @media (min-width: 1000px) and (max-width: 1300px) {
       font-size: 2.5rem;
       line-height: 7.6rem;
     }
@@ -49,10 +49,9 @@ export const Container = styled.div`
     @media (min-width: 550px) and (max-width: 1000px) {
       width: 25%;
     }
-    @media (min-width: 1000px) and (max-width:1300px){
+    @media (min-width: 1000px) and (max-width: 1300px) {
       width: 15%;
-      font-size:1.99rem;
+      font-size: 1.99rem;
     }
-
   }
-`;
+`

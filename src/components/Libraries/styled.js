@@ -11,10 +11,10 @@ export const Container = styled.div`
     display: block;
   }
   @media (min-width: 1000px) and (max-width: 1300px) {
-   display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: baseline;
-    padding: 5rem 7rem
+    padding: 5rem 7rem;
   }
 
   > section span {
@@ -33,11 +33,14 @@ export const Container = styled.div`
     color: var(--main-footer-color);
     line-height: 2.4rem;
   }
-`;
+`
 export const WrapperTitle = styled(Container)`
-    padding: 0;
-    margin-top: 7rem;
-    @media (min-width: 1000px) and (max-width: 1300px) {display: block;padding:0rem}
+  padding: 0;
+  margin-top: 7rem;
+  @media (min-width: 1000px) and (max-width: 1300px) {
+    display: block;
+    padding: 0rem;
+  }
   > h4 {
     font-size: 3rem;
     color: var(--main-footer-color);
@@ -49,4 +52,4 @@ export const WrapperTitle = styled(Container)`
       font-size: 2.3rem;
     }
   }
-`;
+`

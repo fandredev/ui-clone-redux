@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -12,7 +10,7 @@ export const Container = styled.div`
   @media (min-width: 480px) {
     padding: 1rem;
   }
-  @media (min-width: 1000px) and (max-width:1300px) {
+  @media (min-width: 1000px) and (max-width: 1300px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
@@ -31,16 +29,16 @@ export const Container = styled.div`
     text-align: center;
     line-height: 6.2rem;
 
-    @media (min-width: 1000px) and (max-width:1300px) {
+    @media (min-width: 1000px) and (max-width: 1300px) {
       font-size: 2.44rem;
     }
   }
   > section p {
     font-size: 1.522rem;
     line-height: 2.6rem;
-    @media (min-width: 1000px) and (max-width:1300px) {
+    @media (min-width: 1000px) and (max-width: 1300px) {
       font-size: 1.622rem;
       line-height: 3r;
     }
   }
-`;
+`

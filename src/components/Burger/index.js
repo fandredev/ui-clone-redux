@@ -1,41 +1,24 @@
+import './styled.css'
 import React from 'react'
-import { slide as Menu } from 'react-burger-menu'
-import { Link } from 'react-router-dom'
-import logo from "../../assets/images/redux.svg";
-
-import './style.css'
+import { actViewMenu } from '../../store/landing/action'
+import { useDispatch, useSelector } from 'react-redux'
 const Burger = () => {
+  const dispatch = useDispatch()
+  const viewTabBurger = useSelector((state) => state.landing.viewTabBurger)
+  const handleOpenMenu = () => {
+    dispatch(actViewMenu())
+  }
+
   return (
-    <Menu>
-      <div id="wrapper">
-      <img src={logo} alt="Logotipo do redux" />
-      <span>Redux</span>
-      </div>
-      <ol>
-        <li>
-          {" "}
-          <Link to="#">Getting started</Link>
-        </li>
-        <li>
-          <Link to="#">Tutorial</Link>
-        </li>
-        <li>
-          <Link to="#">API</Link>
-        </li>
-        <li>
-          <Link to="#">FAQ</Link>
-        </li>
-        <li>
-          <Link to="#">Best Practices</Link>
-        </li>
-        <li>
-          <Link to="#">Github</Link>
-        </li>
-        <li>
-          <Link to="#">Need help?</Link>
-        </li>
-      </ol>
-    </Menu>
-  );
+    <>
+      <input id="menu-hamburguer" type="checkbox" />
+
+      <label htmlFor="menu-hamburguer">
+        <div className="menu">
+          <span onClick={handleOpenMenu} className="hamburguer"></span>
+        </div>
+      </label>
+    </>
+  )
 }
 export default Burger

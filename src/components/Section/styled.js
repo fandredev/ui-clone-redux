@@ -4,12 +4,12 @@ export const Container = styled.div`
   background: var(--bg-footer);
   padding: 2rem;
 
-  @media (min-width: 1000px) and (max-width:1300px) {
+  @media (min-width: 1000px) and (max-width: 1300px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   > ol {
-    @media (min-width: 1000px) and (max-width:1300px) {
+    @media (min-width: 1000px) and (max-width: 1300px) {
       padding: 2rem 8rem;
     }
   }
@@ -28,9 +28,9 @@ export const Container = styled.div`
       text-decoration: underline;
       cursor: pointer;
     }
-    @media (min-width: 1000px) and (max-width:1300px) {
+    @media (min-width: 1000px) and (max-width: 1300px) {
       font-size: 1.7rem;
       line-height: 2.8rem;
     }
   }
-`;
+`

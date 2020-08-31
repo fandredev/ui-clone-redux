@@ -13,6 +13,6 @@ ReactDOM.render(
         <Route path="/" exact component={Landing} />
       </Switch>
     </BrowserRouter>
-   </Provider>,
-  document.getElementById("root")
-);
+  </Provider>,
+  document.getElementById('root')
+)
