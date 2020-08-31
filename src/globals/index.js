@@ -17,6 +17,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     font-size: 1.6rem;
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
   }
   ul,li {
     list-style: none;
@@ -32,7 +34,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 `
 export const fullCenter = css`
-  grid-area: second;
   display: flex;
   justify-content: center;
   align-items: center;

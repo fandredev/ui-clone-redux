@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container  } from "./styled";
+import { Container } from './styled'
 
-const Section =  () => {
+const Section = () => {
   return (
     <Container>
       <ol>
@@ -22,8 +22,14 @@ const Section =  () => {
       <ol>
         <span>More</span>
         <li>Github</li>
+        <li>
+          <img
+            src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+            alt="Imagem ilustrativa do deploy na netfily"
+          />
+        </li>
       </ol>
     </Container>
-  );
+  )
 }
 export default Section

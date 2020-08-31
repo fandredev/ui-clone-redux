@@ -6,6 +6,7 @@ export const Container = styled.div`
   grid-template-rows: 3.5rem;
   padding: 1rem;
   grid-template-areas: 'first second';
+  background: ${({ theme }) => theme.body};
 
   @media (min-width: 1000px) and (max-width: 1300px) {
     grid-template-columns: 15% 1fr;
@@ -34,7 +35,9 @@ export const WrapperLeft = styled.div`
   }
   > span {
     font-weight: 700;
-    cursor: pointer;
+    > i {
+      cursor: pointer;
+    }
 
     @media (min-width: 1000px) and (max-width: 1300px) {
       margin-left: 1rem;
@@ -43,26 +46,36 @@ export const WrapperLeft = styled.div`
 `
 export const WrapperRight = styled.div`
   grid-area: second;
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
-    > i {
+
+  > span {
+    @media (max-width: 1000px) {
+      display: none;
       cursor: pointer;
     }
-    > input {
-      background: var(--bg-input);
-      padding: 1rem;
-      margin-left: 20px;
-      width: 80%;
-      color: #000;
-      outline: none;
-      border-radius: 20px;
-      border: none;
-
-    @media (min-width: 1000px) and (max-width:1300px){
-     width: 20%;
+  }
+  > i {
+    cursor: pointer;
+    @media (min-width: 1000px) {
+      display: none;
     }
   }
+  > input {
+    background: var(--bg-input);
+    padding: 1rem;
+    margin-left: 20px;
+    width: 80%;
+    color: #000;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    display: none;
 
-}
+    @media (min-width: 1000px) and (max-width: 1300px) {
+      width: 20%;
+      display: block;
+    }
+  }
 `

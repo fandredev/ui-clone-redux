@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
       > span {
         font-weight: 700;
         font-size: 2rem;
+        margin: 0 2rem;
       }
 
       > img {

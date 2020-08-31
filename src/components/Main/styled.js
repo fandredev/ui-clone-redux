@@ -1,12 +1,11 @@
 import styled from 'styled-components'
+import { fullCenter } from '../../globals'
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${fullCenter}
   flex-flow: column wrap;
   padding: 3rem;
-  color: var(--main-footer-color);
+  color: ${({ theme }) => theme.colorDarkBgMain};
   @media (min-width: 480px) {
     padding: 1rem;
   }

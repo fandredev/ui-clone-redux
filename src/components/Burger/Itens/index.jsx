@@ -1,6 +1,7 @@
 import React from 'react'
 import { Wrapper } from './styles'
 import logo from '../../../assets/images/redux.svg'
+import Switch from 'react-switch'
 
 const Itens = () => {
   return (
@@ -9,6 +10,7 @@ const Itens = () => {
         <div>
           <span id="top">Redux</span>
           <img src={logo} alt="Logotipo do redux" />
+          <Switch handleDiameter={15} />
         </div>
         <hr></hr>
         <li>Getting Started</li>

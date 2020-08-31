@@ -1,9 +1,8 @@
 import styled from 'styled-components'
+import { fullCenter } from '../../globals'
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${fullCenter}
   line-height: 2rem;
   flex-flow: row wrap;
   color: #fff;

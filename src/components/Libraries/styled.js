@@ -1,10 +1,9 @@
 import styled from 'styled-components'
+import { fullCenter } from '../../globals'
 
 export const Container = styled.div`
-  display: flex;
+  ${fullCenter}
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   padding: 3rem;
   text-align: center;
   @media (min-width: 520px) {
@@ -22,15 +21,14 @@ export const Container = styled.div`
     font-size: 2.44rem;
     font-weight: 900;
     margin: 1.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    ${fullCenter}
     @media (min-width: 520px) {
       display: block;
     }
   }
   > section p {
-    color: var(--main-footer-color);
+    color: ${({ theme }) => theme.colorDarkBgMain};
+
     line-height: 2.4rem;
   }
 `
@@ -43,7 +41,7 @@ export const WrapperTitle = styled(Container)`
   }
   > h4 {
     font-size: 3rem;
-    color: var(--main-footer-color);
+    color: ${({ theme }) => theme.colorDarkBgMain};
     line-height: 0rem;
     @media (max-width: 519px) {
       font-size: 1.6rem;

@@ -1,9 +1,7 @@
 import styled from 'styled-components'
-
+import { fullCenter } from '../../globals'
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${fullCenter}
   flex-flow: row wrap;
   padding: 3rem;
   background: var(--main);
@@ -13,7 +11,7 @@ export const Container = styled.div`
     display: block;
   }
   @media (min-width: 1000px) and (max-width: 1300px) {
-    height: 45vh;
+    height: 50vh;
     padding: 5rem;
   }
   > span {
@@ -50,7 +48,7 @@ export const Container = styled.div`
       width: 25%;
     }
     @media (min-width: 1000px) and (max-width: 1300px) {
-      width: 15%;
+      width: 20%;
       font-size: 1.99rem;
     }
   }

@@ -13,11 +13,6 @@ export default (state = INITIAL_STATE, action) => {
         viewInput: !state.viewInput,
       })
     }
-    case types.HIDE_INPUT: {
-      return Object.assign(state, {
-        viewInput: state.viewInput,
-      })
-    }
 
     case types.SHOW_NAV_HEADER: {
       return Object.assign(state, {

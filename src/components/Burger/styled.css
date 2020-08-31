@@ -54,3 +54,9 @@ input:checked ~ label  .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
 }
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .hamburger, .menu {
+    display: none;
+  }
+}

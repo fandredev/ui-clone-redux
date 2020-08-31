@@ -6,12 +6,6 @@ export function actViewInput() {
     type: types.VIEW_INPUT,
   }
 }
-export function actHideInput() {
-  return {
-    type: types.HIDE_INPUT,
-  }
-}
-
 // Nav
 export function actViewNav() {
   return {
