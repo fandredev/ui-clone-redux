@@ -28,12 +28,17 @@ export const WrapperLeft = styled.div`
       max-width: 15%;
     }
     @media (min-width: 1000px) and (max-width: 1300px) {
-      min-width: 12%;
+      min-width: 17%;
+      margin: 0;
     }
   }
   > span {
     font-weight: 700;
     cursor: pointer;
+
+    @media (min-width: 1000px) and (max-width: 1300px) {
+      margin-left: 1rem;
+    }
   }
 `
 export const WrapperRight = styled.div`
@@ -47,14 +52,15 @@ export const WrapperRight = styled.div`
     > input {
       background: var(--bg-input);
       padding: 1rem;
-      width: 86%;
+      margin-left: 20px;
+      width: 80%;
       color: #000;
       outline: none;
       border-radius: 20px;
       border: none;
 
     @media (min-width: 1000px) and (max-width:1300px){
-     width: 22%;
+     width: 20%;
     }
   }
 

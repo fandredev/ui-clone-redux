@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components'
 
-export default createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   *, *:before, *:after{
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ export default createGlobalStyle`
       -webkit-font-smoothing: antialiased;
   }
   body {
-    font-size: 1.6rem
+    font-size: 1.6rem;
   }
   ul,li {
     list-style: none;

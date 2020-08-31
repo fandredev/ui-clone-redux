@@ -36,7 +36,7 @@
   bottom: -10px;
 }
 
-input {
+input[id="menu-hamburguer"] {
   display: none;
 }
 

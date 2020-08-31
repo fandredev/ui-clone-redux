@@ -7,16 +7,19 @@ const Burger = () => {
   const handleOpenMenu = () => {
     dispatch(actViewMenu())
   }
-
-  return (
-    <>
-      <input id="menu-hamburguer" type="checkbox" />
-      <label htmlFor="menu-hamburguer">
-        <div className="menu">
-          <span onClick={handleOpenMenu} className="hamburguer"></span>
-        </div>
-      </label>
-    </>
-  )
+  if (window.screen.width <= 1000) {
+    return (
+      <>
+        <input id="menu-hamburguer" type="checkbox" />
+        <label htmlFor="menu-hamburguer">
+          <div className="menu">
+            <span onClick={handleOpenMenu} className="hamburguer"></span>
+          </div>
+        </label>
+      </>
+    )
+  } else {
+    return <></>
+  }
 }
 export default Burger

@@ -35,7 +35,6 @@ export default (state = INITIAL_STATE, action) => {
         viewTabBurger: !state.viewTabBurger,
       })
     }
-
     default: {
       return state
     }
