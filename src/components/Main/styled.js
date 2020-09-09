@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media (min-width: 1000px) and (max-width: 1300px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
+    gap: 2rem;
     align-items: baseline;
     padding: 3rem 8rem;
   }
